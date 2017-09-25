@@ -24,8 +24,6 @@ class Order extends React.Component {
   }
 
 
-
-
   render() {
     const orderIds = Object.keys(this.props.order);
     const total = orderIds.reduce((prevTotal, key) => {
@@ -47,7 +45,6 @@ class Order extends React.Component {
             <strong>Total:</strong>
             {formatPrice(total)}
            </li>
-        }
         </ul>
       </div>
     )
