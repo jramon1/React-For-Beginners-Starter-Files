@@ -30,7 +30,7 @@ class App extends React.Component {
 
 		//check if there is any order in localStorage
 		const localStorageRef = localStorage.getItem(`order-${this.props.params.storeId}`);
-		if(localStorage) {
+		if(localStorageRef) {
 			//update our App component's order state
 			this.setState({
 				order: JSON.parse(localStorageRef)
