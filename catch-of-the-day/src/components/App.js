@@ -126,7 +126,11 @@ class App extends React.Component {
 	    </div>
 	    )
 	 }
-	}
+}
+
+App.propTypes = {
+  params: React.PropTypes.object.isRequired
+}
 
 
 
